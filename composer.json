@@ -16,7 +16,9 @@
         "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
         "zendframework/zend-mvc": "^3.0.1",
         "zfcampus/zf-development-mode": "^3.0",
-        "alteris/behat-zendframework-extension": "^1.0"
+        "alteris/behat-zendframework-extension": "^1.0",
+        "behat/mink": "^1.7",
+        "phpunit/phpunit": "^6.0"
     },
     "autoload": {
         "psr-4": {
@@ -40,5 +42,8 @@
         ],
         "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
         "test": "phpunit"
+    },
+    "require-dev": {
+        "behat/mink-extension": "^2.2"
     }
 }

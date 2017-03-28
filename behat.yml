@@ -1,0 +1,11 @@
+default:
+  autoload:
+    '': %paths.base%/features/bootstrap
+  extensions:
+    Alteris\BehatZendframeworkExtension\ServiceContainer\Extension:
+      configuration: config/application.config.php
+  suites:
+    default:
+      contexts: [ ApplicationContext ]
+      paths:
+        - %paths.base%/features
