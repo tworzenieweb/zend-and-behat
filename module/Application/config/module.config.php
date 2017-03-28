@@ -7,6 +7,7 @@
 
 namespace Application;
 
+use Application\Service\BookCreator;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
@@ -41,6 +42,11 @@ return [
             Controller\IndexController::class => InvokableFactory::class,
         ],
     ],
+    'service_manager' => array(
+        'invokables' => array(
+            BookCreator::class => BookCreator::class
+        )
+    ),
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,

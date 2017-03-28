@@ -11,4 +11,3 @@ Feature: Homepage
   Scenario: Accessing by routing name
     When I visit "home"
     Then It should contain '<h1>Welcome to <span class="zf-green">Zend Framework</span></h1>'
-    

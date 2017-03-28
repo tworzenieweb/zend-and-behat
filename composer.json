@@ -18,7 +18,8 @@
         "zfcampus/zf-development-mode": "^3.0",
         "alteris/behat-zendframework-extension": "^1.0",
         "behat/mink": "^1.7",
-        "phpunit/phpunit": "^6.0"
+        "phpunit/phpunit": "^6.0",
+        "propel/propel1": "^1.6"
     },
     "autoload": {
         "psr-4": {
